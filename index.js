@@ -4,14 +4,12 @@ let count = 0;
 
 function increment() {
   count++;
-  countEl.innerText = count;
-  console.log(count);
+  countEl.textContent = count;
 }
 
 function save() {
   let countStr = count + " - ";
   saveEl.textContent += countStr;
-  console.log(count);
 }
 
 function reset() {
